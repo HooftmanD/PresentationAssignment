@@ -1,0 +1,17 @@
+---
+title: "PresentationAssignment, see second slide"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+library(plotly)
+library(ggplot2)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## 2020-01-06
+
+```{r, message=FALSE}
+options(warn=-1)
+plot_ly(mtcars, x=mtcars$wt, y=mtcars$mpg, mode="markers")
+```
